@@ -1,8 +1,8 @@
 <?php
 
-require 'config.php';
+require './config.php';
 
-$dsn = "mysql:host=$bookstore;dbname=$db;charset=$charset";
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

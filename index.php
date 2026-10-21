@@ -1,7 +1,7 @@
 
 <?php
 
-require 'database.php';
+require './database.php';
 
 $stmt = $pdo->query('SELECT id, title FROM books');
 
