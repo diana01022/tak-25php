@@ -1,3 +1,4 @@
+
 <?php
 
 require 'database.php';
@@ -15,8 +16,10 @@ $stmt = $pdo->query('SELECT id, title FROM books');
 </head>
 <body>
 
+    <a href="add_author.php">Lisa autor</a>
+
     <ul>
-     
+
 <?php while ( $book = $stmt->fetch() ) { ?>
 
         <li>
@@ -28,7 +31,6 @@ $stmt = $pdo->query('SELECT id, title FROM books');
 <?php } ?>
 
     </ul>
-
 
 </body>
 </html>
